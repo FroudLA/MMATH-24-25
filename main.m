@@ -13,6 +13,7 @@ c_1 = -3; c_2 = 1;
 t_n = t_finite(N) + perturbate(N, c_1, @(x) (2*pi)^(-1/2)*exp(-1i*x)) + perturbate(N, c_2, @(x)  (2*pi)^(-1/2)*exp(2i*x));
 spec_81 = eig(t_n);
 scatter(real(spec_81), 0*spec_81)
-% z = zeros(2*N+1,1);
+z = zeros(2*N+1,1);
 % scatter(spec_81,z,'.')
+
  
